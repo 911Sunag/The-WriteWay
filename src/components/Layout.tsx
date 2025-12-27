@@ -1,16 +1,15 @@
 import type { PropsWithChildren } from 'react'
 import NavBar from './NavBar'
+import Footerr from './Footerr'
 
 const Layout = ({children} : PropsWithChildren) => {
   return (
     <div>
-        <NavBar />
+        <NavBar/>
      <main className='min-h-screen'>
         {children}
      </main>
-     <footer>
-        <p>sunag</p>
-     </footer>
+      <Footerr/>
     </div>
   )
 }

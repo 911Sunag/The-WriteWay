@@ -4,14 +4,14 @@ const NavBar = () => {
   const linkSel = ({ isActive }: { isActive: boolean }) =>
     `relative pb-1 transition ${
       isActive
-        ? "text-pink-500 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-400"
+        ? "text-pink-500 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-5 after:bg-blue-400 italic font-Playwrite"
         : "text-black"
     }`;
 
   return (
     <section className="flex flex-col items-center justify-center gap-8 p-5">
       <h1 className="font-Playwrite text-4xl font-bold selection:bg-pink-400">
-        The WriteWay
+        The Write<em className="text-pink-400">way</em>
       </h1>
 
       <nav className="flex justify-between  w-full text-xl font-nunpara font-semibold">
